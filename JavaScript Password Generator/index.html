@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>Password Generator</title>
+  </head>
+  <body>
+
+      <div class="container">
+        <h1>Password Generator</h1>
+        <div class="p-header">
+          <input type="text" id="password">
+          <button class="copy" id="copy">Copy</button>
+        </div>
+        <div class="p-body">
+          <div class="form-control">
+            <label for="p-length">Password Length</label>
+            <input type="number" name="" id="p-length" value="12" min="8" max="30">
+          </div>
+
+          <div class="form-control">
+            <label for="p-uppercase">Include Uppercase</label>
+            <input type="checkbox" id="p-uppercase">
+          </div>
+
+          <div class="form-control">
+            <label for="p-lowercase">Include Lowercase</label>
+            <input type="checkbox" id="p-lowercase">
+          </div>
+
+          <div class="form-control">
+            <label for="p-length">Include Numbers</label>
+            <input type="checkbox" id="p-number">
+          </div>
+
+          <div class="form-control">
+            <label for="p-length">Include Symbols</label>
+            <input type="checkbox" id="p-symbol">
+          </div>
+          <button id="submit">Generate</button>
+        </div>
+
+      </div>
+
+      <script src="app.js"></script>
+  </body>
+</html>
